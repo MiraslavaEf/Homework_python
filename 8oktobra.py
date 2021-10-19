@@ -41,7 +41,7 @@ def ratio(array):
     ratio_big = (bb / len(array)) * 100
     ratio_small = (sb / len(array)) * 100
     ratio_equal = (equal / len(array)) * 100
-    p = f'B строке {round(ratio_small)}% заглавных букв больше {round(ratio_small)}% \
+    p = 'B строке {round(ratio_small)}% заглавных букв больше {round(ratio_small)}% \
 строк где маленьких букв больше {round(ratio_equal)}% строк где их одинаково'
     return p
 
