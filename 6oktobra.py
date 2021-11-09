@@ -7,11 +7,14 @@ def p():
             print(d)
             break
         else:
-            print('введите номер:')
-            a = int(input())
-            d[b] = a
-            if (a[0] == "+" and a[2] == "-" and a[6] == "-" and a[10] == "-" and a[13] == "-"):
-            	if a[1:].replace("-","").isdigit():
-            	p[b] = a
+            a = str(input("Введите номер: "))
+            if len(a) == 16:
+                if (a[0] != "+" and a[1] != "7" and a[2] != "-" and a[6] != "-" and a[10] != "-" and a[13] != "-"):
+                    print("Ошибка")
+                    break
+            else:
+                print("Ошибка, введите номер в правильном формате(+7-ххх-хх-хх)")
+                break          	
+            d[b] = a                
     return 0
 p()
